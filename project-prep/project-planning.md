@@ -15,3 +15,11 @@
 ## Git process
 
 [gitProcess](images/gitProcess.png)
+
+## WireFrame Planning: Home Page
+
+[homePage](./wireframe-images/homePage.png)
+
+## WireFrame Planning: About Us Page
+
+[aboutUsPage](./wireframe-images/aboutPage.png)
