@@ -8,20 +8,16 @@
 -I would like to be able to get recommendations for music on my own account on a webpage.
 -I would like to use a webpage that I can log into and find movies.
 
-
 ## Software requirements (IN/OUT)
 
-IN:
-Our product will provide users the ability to use one web page to access music and movies, customized to their liking. Our product will provide a few features as our MVP. The web app will provide users access to their personalized account. It will also implement recommendations based on your history.
+IN: Our product will provide users the ability to use one web page to access music and movies, customized to their liking. Our product will provide a few features as our MVP. The web app will provide users access to their personalized account. It will also implement recommendations based on your history
 -install react
 -install axios
 -install express, cors, dotenv
 -install mongoose
 -install bootstrap
--
 
-OUT:
-Our product will never turn into an IOS or Android app.
+OUT:Our product will never turn into an IOS or Android app.
 
 ## MVP/ Stretch Goal
 
