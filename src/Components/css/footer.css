@@ -1,0 +1,18 @@
+.footer {
+    text-align: center;
+}
+
+.footer__social {
+    margin-bottom: 1rem;
+}
+
+.footer__link {
+    margin: 0 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: #555;
+    text-decoration: underline;
+}
