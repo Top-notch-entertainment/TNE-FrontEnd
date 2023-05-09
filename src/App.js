@@ -12,13 +12,13 @@ import Logout from './Components/Logout.js';
 import Profile from './Components/Profile.js';
 import Home from './Components/Home.js';
 import AboutUs from './Components/AboutUs.js';
-import Header from "./Components/Header.js";
+
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Header />}>
-      <Route index element={<Home />} />
+    <Route path="/" element={<Home />}>
+      {/* <Route index element={<Home />} /> */}
       <Route path="about" element={<AboutUs />} />
       <Route path="profile" element={<Profile />} />
       <Route path="login" element={<Login />} />
