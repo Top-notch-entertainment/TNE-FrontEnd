@@ -18,7 +18,6 @@ import AboutUs from './Components/AboutUs.js';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
-      {/* <Route index element={<Home />} /> */}
       <Route path="about" element={<AboutUs />} />
       <Route path="profile" element={<Profile />} />
       <Route path="login" element={<Login />} />
