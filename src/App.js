@@ -7,7 +7,7 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<NavLayout />}>
+    <Route path="/" element={<Nav />}>
       <Route index element={<Home />} />
       <Route path="about" element={<AboutUs />} />
       <Route path="profile" element={<Profile />} />
@@ -18,16 +18,10 @@ const router = createBrowserRouter(
 );
 
 
-
-
-
-
-
-
 function App() {
   return (
     <>
-      <p>Hello World</p>
+      <RouterProvider router={router} />
     </>
   );
 }
