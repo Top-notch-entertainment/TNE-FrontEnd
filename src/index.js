@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './Components/css/index.css';
 import App from './App';
 import { Auth0Provider } from "@auth0/auth0-react";
 import ReactDOM from "react-dom";
