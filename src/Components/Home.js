@@ -9,8 +9,8 @@ class Home extends React.Component {
         return (
             <>
 
-            <header>
-                <nav>
+            <header className='header'>
+                <nav className='nav'>
                     {this.props.auth0.isAuthenticated ? (
                         <>
                             <NavLink to="profile">Profile</NavLink>
@@ -23,6 +23,7 @@ class Home extends React.Component {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="about">About Us</NavLink>
                 </nav>
+                <h1 className='header__title'>Top Notch Entertainment</h1>
             </header>
             <Outlet />
             <Footer />
