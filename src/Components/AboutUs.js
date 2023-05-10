@@ -14,7 +14,7 @@ class AboutUs extends React.Component {
             <Card.Title>Tricia Sawyer</Card.Title>
             <Card.Img
               variant="top"
-              src="profile-images/tricia.png"
+              src="../profile-images/tricia.png"
               alt="Tricia's profile" />
             <Card.Body>
               <Card.Text>Some quick example text for T.</Card.Text>
