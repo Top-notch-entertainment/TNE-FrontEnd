@@ -1,0 +1,26 @@
+{
+  "skills": {
+    "icons": [
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "70"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-plain",
+        "level": "85"
+      },
+      {
+        "name": "Node",
+        "class": "devicon-node-plain",
+        "level": "85"
+      }
+    ]
+  }
+}

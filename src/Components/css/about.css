@@ -1,0 +1,38 @@
+#languages {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 44, 44);
+    height: 200px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tricia-card {
+    margin-left: 50px;
+    text-align: center;
+}
+
+.tim-card {
+    text-align: center;
+}
+
+.bryan-card {
+    margin-right: 50px;
+    text-align: center;
+}
