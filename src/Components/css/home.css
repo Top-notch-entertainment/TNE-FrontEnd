@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    width: 350px;
+    margin-left: 63rem;
+    margin-top: 20px;
+  }
+
+body {
+    background-color: whitesmoke;
+}
+  
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(21, 20, 20);
+}
+
+.header__title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(21, 20, 20);
+}
