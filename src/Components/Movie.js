@@ -1,11 +1,11 @@
 import React from 'react';
-import MovieContent from '../Components/';
+import MovieContent from '../Components/MovieContent.js';
 
 
 class Movie extends React.Component {
 
     render() {
-
+// console.log('movieData', movieData);
         return (
             <>
                 {
@@ -18,3 +18,5 @@ class Movie extends React.Component {
         )
     }
 }
+
+export default Movie;
