@@ -7,8 +7,23 @@ import SpotifyDisplay from "./SpotifyDisplay";
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
+
+
   const [genre, setGenre] = useState("");
   const [genreData, setGenreData] = useState([]);
+
+
+
+
+  console.log("Genre Data to render", genreData[0]);
+
+  // console.log("Name", genreData[0].name);
+
+  // console.log("Images", genreData[0].images[0]);
+
+
+
+
 
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -22,8 +37,10 @@ const Profile = () => {
   const fetchGenreData = async (genre) => {
     try {
       let serverURL = `${process.env.REACT_APP_SERVER}/browsegenre?genre=${genre}`;
+      console.log(serverURL);
       let genreResults = await axios.get(serverURL);
       console.log("server response", genreResults);
+      console.log("testing items", genreResults.data.playlists.items[0].images[0]);
       setGenreData(genreResults.data.playlists.items);
     } catch (error) {
       console.error(error);
@@ -66,6 +83,7 @@ const Profile = () => {
         </Form>
         {genreData && genreData.length > 0 && <SpotifyDisplay genreData={genreData} />}
       </Container >
+
     )
   );
 };
