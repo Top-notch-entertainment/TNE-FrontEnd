@@ -1,8 +1,8 @@
+import React from "react";
 import { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
-import React from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Container, Image } from "react-bootstrap";
 import SpotifyDisplay from "./SpotifyDisplay";
 
 const Profile = () => {
@@ -23,6 +23,7 @@ const Profile = () => {
     try {
       let serverURL = `${process.env.REACT_APP_SERVER}/browsegenre?genre=${genre}`;
       let genreResults = await axios.get(serverURL);
+      console.log("server response", genreResults);
       setGenreData(genreResults.data.playlists.items);
     } catch (error) {
       console.error(error);
@@ -32,13 +33,13 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-      <>
-        <section className="user">
-          <img className="user__image" src={user.picture} alt={user.name} />
-          <h2 className="user__title">{user.name}</h2>
+      <Container>
+        <section className="user mt-5">
+          <Image className="user__image rounded-circle" src={user.picture} alt={user.name} />
+          <h2 className="user__title mt-3">{user.name}</h2>
           <p className="user_email">{user.email}</p>
         </section>
-        <Form onSubmit={handleSearch}>
+        <Form onSubmit={handleSearch} className="mt-5">
           <Form.Group as={Row} controlId="searchType">
             <Form.Label column sm="2">Search by</Form.Label>
             <Col sm="10">
@@ -64,9 +65,10 @@ const Profile = () => {
           <Button variant="primary" type="submit">Search</Button>
         </Form>
         {genreData && genreData.length > 0 && <SpotifyDisplay genreData={genreData} />}
-      </>
+      </Container >
     )
   );
 };
+
 
 export default Profile;
