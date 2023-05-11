@@ -20,13 +20,13 @@ body {
 .about-title {
     text-align: center;
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 50;
     background-color: rgb(22, 78, 41);
     color: whitesmoke;
-    height: 60px;
-    padding-top: 8px;
-    width: 300px;
+    height: 40px;
+    padding: 10px;
+    width: 250px;
     margin-left: 580px;
 }
 
