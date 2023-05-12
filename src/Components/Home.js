@@ -81,9 +81,9 @@ class Home extends React.Component {
                 <Form className='form' onSubmit={this.handleMovieSubmit}>
                     <label className='form-label'>
                         Search for Movie:
-                        <input type='text' onChange={this.handleMovieInput} />
+                        <input className='input' type='text' onChange={this.handleMovieInput} />
                     </label>
-                    <Button type='submit'>Explore!</Button>
+                    <Button className='form-button' type='submit'>Explore!</Button>
                 </Form>
 
                     <Movie movieData={this.state.movieData} />

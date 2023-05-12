@@ -68,8 +68,10 @@ body {
 }
 
 .tricia-img {
-    width: 250px;
+    width: 280px;
+    height: 20rem;
     margin-right: 5rem;
+    margin-top: 25px;
 }
 
 .tim-img {
@@ -81,7 +83,9 @@ body {
 
 .bryan-img {
     width: 300px;
+    height: 20rem;
     margin-right: 4rem;
+    margin-top: 5rem;
 }
 
 .pitch {

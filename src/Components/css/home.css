@@ -9,10 +9,6 @@
     margin-left: 63rem;
     margin-top: 20px;
   }
-
-body {
-    background-color: whitesmoke;
-}
   
 .nav-link {
     text-decoration: none;
@@ -30,4 +26,26 @@ header {
     
     height: 200px;
     width: 100%;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+width: 150px;
+margin: auto 300px;
+}
+
+.form-label {
+padding-top: 15px;
+}
+
+.input {
+padding: 15px;
+width: 50rem;
+height: 5px;
+}
+
+.form-button {
+margin-bottom: 150px;
 }
