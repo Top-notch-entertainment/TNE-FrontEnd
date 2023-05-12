@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap'
 import './css/movie.css';
 
+
 class MovieContent extends React.Component {
 
     render() {
@@ -16,18 +17,20 @@ class MovieContent extends React.Component {
 
         return (
             <>
-            <article className='article'>
-                <Col className='column'>
-                <Card id="movie-card" >
-                    <Card.Body className='card-body'>
-                        <Card.Img className='card-img' src={imageUrl} alt={this.props.date.title} />
-                        <Card.Title> Title: {this.props.date.title}</Card.Title>
-                        <Card.Text> Date Of Release: {this.props.date.release_date} </Card.Text>
-                        <Card.Text> Overview: {this.props.date.overview}</Card.Text>
-                    </Card.Body>
-                </Card>
-                </Col>
-                </article>
+                
+                    {/* <article className='article'>
+                        <Col className='column'> */}
+                            <Card id="movie-card" >
+                                <Card.Body className='card-body'>
+                                    <Card.Img className='card-img' src={imageUrl} alt={this.props.date.title} />
+                                    <Card.Title> Title: {this.props.date.title}</Card.Title>
+                                    <Card.Text> Date Of Release: {this.props.date.release_date} </Card.Text>
+                                    <Card.Text> Overview: {this.props.date.overview}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        {/* </Col>
+                    </article> */}
+           
             </>
         );
     }
