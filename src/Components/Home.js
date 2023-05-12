@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { withAuth0 } from "@auth0/auth0-react";
 import Footer from './Footer';
 import './css/home.css';
-import Movie from './Movie.js';
+import Movie from './Movie';
 import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -31,7 +31,7 @@ class Home extends React.Component {
 
 
     displayMovie = async (searchQuery) => {
-        // console.log('do we have a city', searchQuery);
+        console.log('do we have a city', searchQuery);
         try {
             const movieResponse = await axios.get(`${process.env.REACT_APP_SERVER}/movies?`,
                 {

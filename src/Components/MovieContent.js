@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap'
+import { Card, Col } from 'react-bootstrap'
 import './css/movie.css';
 
 class MovieContent extends React.Component {
@@ -16,6 +16,8 @@ class MovieContent extends React.Component {
 
         return (
             <>
+            <article className='article'>
+                <Col className='column'>
                 <Card id="movie-card" >
                     <Card.Body className='card-body'>
                         <Card.Img className='card-img' src={imageUrl} alt={this.props.date.title} />
@@ -24,6 +26,8 @@ class MovieContent extends React.Component {
                         <Card.Text> Overview: {this.props.date.overview}</Card.Text>
                     </Card.Body>
                 </Card>
+                </Col>
+                </article>
             </>
         );
     }
