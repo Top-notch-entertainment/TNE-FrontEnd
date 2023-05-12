@@ -17,7 +17,7 @@ class SpotifyDisplay extends React.Component {
         const { genreData } = this.props;
 
         // Logging 'genreData' to the console
-        console.log("GenreData", genreData);
+        // console.log("GenreData", genreData);
 
         // Initializing an empty array to hold slide items
         const slides = [];
@@ -37,16 +37,16 @@ class SpotifyDisplay extends React.Component {
                                 {/* Displaying playlist image */}
                                 <Card.Img variant="top" src={playlist.images[0].url} alt={playlist.name} />
                                 {/* Logging URL to the console */}
-                                {console.log("URL", playlist.images[0].url)}
+                                {/* {console.log("URL", playlist.images[0].url)} */}
                                 <Card.Body>
                                     {/* Displaying playlist name */}
                                     <Card.Title>{playlist.name}</Card.Title>
                                     {/* Logging name to the console */}
-                                    {console.log("Name", playlist.name)}
+                                    {/* {console.log("Name", playlist.name)} */}
                                     {/* Displaying playlist description */}
                                     <Card.Text>{playlist.description}</Card.Text>
                                     {/* Logging description to the console */}
-                                    {console.log("Description", playlist.description)}
+                                    {/* {console.log("Description", playlist.description)} */}
                                 </Card.Body>
                                 <Card.Footer className="d-flex justify-content-between">
                                     {/* Button to mark playlist as favorite */}

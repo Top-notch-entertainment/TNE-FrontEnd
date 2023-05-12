@@ -15,7 +15,7 @@ const Profile = () => {
 
 
 
-  console.log("Genre Data to render", genreData[0]);
+  // console.log("Genre Data to render", genreData[0]);
 
   // console.log("Name", genreData[0].name);
 
@@ -37,10 +37,10 @@ const Profile = () => {
   const fetchGenreData = async (genre) => {
     try {
       let serverURL = `${process.env.REACT_APP_SERVER}/browsegenre?genre=${genre}`;
-      console.log(serverURL);
+      // console.log(serverURL);
       let genreResults = await axios.get(serverURL);
-      console.log("server response", genreResults);
-      console.log("testing items", genreResults.data.playlists.items[0].images[0]);
+      // console.log("server response", genreResults);
+      // console.log("testing items", genreResults.data.playlists.items[0].images[0]);
       setGenreData(genreResults.data.playlists.items);
     } catch (error) {
       console.error(error);
