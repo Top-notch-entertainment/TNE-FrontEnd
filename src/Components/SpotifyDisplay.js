@@ -32,37 +32,39 @@ class SpotifyDisplay extends React.Component {
                 <Carousel.Item key={i}>
                     <Row xs={1} md={2} lg={4} className="g-4">
                         {slideItems.map(playlist => (
-                            <Col key={playlist.id}>
-                                <Card>
-                                    {/* Displaying playlist image */}
-                                    <Card.Img variant="top" src={playlist.images[0].url} alt={playlist.name} />
-                                    {/* Logging URL to the console */}
-                                    {console.log("URL", playlist.images[0].url)}
-                                    <Card.Body>
-                                        {/* Displaying playlist name */}
-                                        <Card.Title>{playlist.name}</Card.Title>
-                                        {/* Logging name to the console */}
-                                        {console.log("Name", playlist.name)}
-                                        {/* Displaying playlist description */}
-                                        <Card.Text>{playlist.description}</Card.Text>
-                                        {/* Logging description to the console */}
-                                        {console.log("Description", playlist.description)}
-                                    </Card.Body>
-                                    <Card.Footer className="d-flex justify-content-between">
-                                        {/* Button to mark playlist as favorite */}
-                                        <Button variant="outline-primary">Favorite</Button>
-                                        {/* Button to open playlist in Spotify */}
-                                        <Button
-                                            variant="outline-success"
-                                            href={`https://open.spotify.com/playlist/${playlist.id}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Open in Spotify
-                                        </Button>
-                                    </Card.Footer>
-                                </Card>
-                            </Col>
+                             playlist ? <Col key = { playlist.id } >
+                            <Card>
+                                {/* Displaying playlist image */}
+                                <Card.Img variant="top" src={playlist.images[0].url} alt={playlist.name} />
+                                {/* Logging URL to the console */}
+                                {console.log("URL", playlist.images[0].url)}
+                                <Card.Body>
+                                    {/* Displaying playlist name */}
+                                    <Card.Title>{playlist.name}</Card.Title>
+                                    {/* Logging name to the console */}
+                                    {console.log("Name", playlist.name)}
+                                    {/* Displaying playlist description */}
+                                    <Card.Text>{playlist.description}</Card.Text>
+                                    {/* Logging description to the console */}
+                                    {console.log("Description", playlist.description)}
+                                </Card.Body>
+                                <Card.Footer className="d-flex justify-content-between">
+                                    {/* Button to mark playlist as favorite */}
+                                    <Button variant="outline-primary">Favorite</Button>
+                                    {/* Button to open playlist in Spotify */}
+                                    <Button
+                                        variant="outline-success"
+                                        href={`https://open.spotify.com/playlist/${playlist.id}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Open in Spotify
+                                    </Button>
+                                </Card.Footer>
+                            </Card>
+                            </Col> : ""
+
+
                         ))}
                     </Row>
                 </Carousel.Item>
