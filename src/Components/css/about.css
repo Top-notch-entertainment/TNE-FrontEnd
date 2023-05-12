@@ -19,26 +19,28 @@ body {
 
 .about-title {
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 60px;
     font-size: 30px;
     font-weight: 50;
     background-color: rgb(22, 78, 41);
     color: whitesmoke;
     height: 40px;
-    padding: 10px;
     width: 250px;
-    margin-left: 580px;
+    margin-left: 585px;
 }
 
-.card-title {
-    font-size: 25px;
+
+.card-title-tricia {
+    margin-left: 250px;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 80px;
+.card-title-tim {
+    margin-left: 225px;
+}
+
+.card-title-bryan {
+    margin-left: 225px;
+    padding-bottom: -20px;
 }
 
 .tricia-card {
@@ -46,16 +48,18 @@ body {
     text-align: center;
     border-radius: 20px;
     display: flex;
+    height: 23rem;
     flex-direction: row;
     flex-direction: row-reverse;
 }
 
 .tim-card {
     text-align: center;
-    margin: -10px;
+    /* margin: -10px; */
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-right: 20rem;
 }
 
 .bryan-card {
@@ -63,51 +67,64 @@ body {
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
     flex-direction: row-reverse;
+    margin-top: -20rem;
 }
 
 .tricia-img {
-    width: 100px;
+    width: 300px;
     height: 20rem;
-    margin-right: 5rem;
-    margin-top: 25px;
+    margin-right: 10rem;
+    margin-left: 25rem;
+    margin-top: 15px;
 }
 
 .tim-img {
     width: 300px;
     height: 300px;
-    margin-left: 4rem;
+    margin: 20rem;
+    margin-right: 20rem;
     margin-top: 25px;
 }
 
 .bryan-img {
     width: 300px;
     height: 20rem;
-    margin-right: 4rem;
-    margin-top: 5rem;
+    margin-right: 15rem;
+    margin-left: 10rem;
+    margin-top: 7rem;
 }
 
 .pitch {
     padding: 5px;
+    height: 300px;
+    width: 600px;
+    margin: 20px;
+}
+
+.pitch-tim {
+    height: 300px;
+    width: 600px;
+    margin-right: 30rem;
 }
 
 .text-tricia {
     width: 600px;
-    margin-right: 300px;
+    margin-right: 400px;
     padding-top: 10px;
+    height: 20rem;
 }
 
 .text-tim {
     width: 600px;
-    margin-left: 300px;
-    padding-top: 10px;
+    margin-left: 210px;
+    padding-top: 5px;
 }
 
 .text-bryan {
     width: 600px;
     margin-right: 220px;
-    padding-top: 10px;
+    padding-top: 5rem;
 }
 
 

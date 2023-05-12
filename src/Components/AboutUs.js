@@ -17,7 +17,7 @@ class AboutUs extends React.Component {
         <Card className="cards">
           <section className="tricia-card">
             <div className="text-tricia">
-              <Card.Title className="card-title">Tricia Sawyer</Card.Title>
+              <Card.Title className="card-title-tricia">Tricia Sawyer</Card.Title>
               <Card.Body>
                 <Card.Text className="pitch">My name is Tricia Sawyer and I am currently a student at DeltaV code school, studying
                   software development, which I will graduate in July of 2023.Before that, I was a college
@@ -37,9 +37,9 @@ class AboutUs extends React.Component {
 
           <section className="tim-card">
             <div className="text-tim">
-              <Card.Title className="card-title">Tim Maupin</Card.Title>
+              <Card.Title className="card-title-tim">Tim Maupin</Card.Title>
               <Card.Body>
-                <Card.Text className="pitch">Hello, my name is Tim Maupin and before I decided to pursue a career in Software Development I was playing professional rugby in the US and previously in Ireland. The reason that I chose this skill to acquire is because I wanted something that was more sustainable than the job I was doing and also less physically demanding.I have also loved playing video games and was even a video game tester in college, so the idea of understanding the back end of development has also been something that I've been limitedly interested in for a while. I would love to work in a environment that is team orientated because I am naturally good working with other people and I enjoy the daily interactions, also it would be really cool and fun to work in a studio that worked on games or shows/movies! The skills I bring is a very long and comprehensive knowledge of front end gaming, I have played games in genres from MOBAs, fps, mmorpgs, argps, rogue-likes, sports games and many more....as I did testing for a handful of games like this before!</Card.Text>
+                <Card.Text className="pitch-tim">Hello, my name is Tim Maupin and before I decided to pursue a career in Software Development I was playing professional rugby in the US and previously in Ireland. The reason that I chose this skill to acquire is because I wanted something that was more sustainable than the job I was doing and also less physically demanding.I have also loved playing video games and was even a video game tester in college, so the idea of understanding the back end of development has also been something that I've been limitedly interested in for a while. I would love to work in a environment that is team orientated because I am naturally good working with other people and I enjoy the daily interactions, also it would be really cool and fun to work in a studio that worked on games or shows/movies! The skills I bring is a very long and comprehensive knowledge of front end gaming, I have played games in genres from MOBAs, fps, mmorpgs, argps, rogue-likes, sports games and many more....as I did testing for a handful of games like this before!</Card.Text>
               </Card.Body>
             </div>
             <Card.Img className="tim-img"
@@ -50,7 +50,7 @@ class AboutUs extends React.Component {
 
           <section className="bryan-card">
             <div className="text-bryan">
-              <Card.Title className="card-title">Bryan Gonazalez</Card.Title>
+              <Card.Title className="card-title-bryan">Bryan Gonazalez</Card.Title>
               <Card.Body>
                 <Card.Text className="pitch">Hello, I'm Bryan Garduno Gonzalez. Most of my woork experience has been in healthcare. When I graduated highschool in 2014, I was sure I would end up working in a hospital. I worked at the ER  for a few years until I decided to attend nursing school at Kirkwood. I quickly realized that the medical field was not for me.
                   I decided to pursue a career in software development bcausse it genuinely ignited a passion and curiosity I had never experienced beforen The field's dynamic and ever-evolviing nature is fascinating. I want to lar about every facet of technological advancements. The prosppect of creating innovative solutions and contributing to ongoing digital advancements greatly appealed to me. I believe this career not only aligns with my intellectual curiossity but also offers the opportunity to make a significant impact on business and society, which further solidifies my commitment to this field.</Card.Text>
